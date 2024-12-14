@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 870649642559693411}
   - component: {fileID: 8754495593261559575}
+  - component: {fileID: -2375270039504339789}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,3 +88,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2375270039504339789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241730750034467704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2bfdf92bc9fc4d49a7f0c984abfee4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 2906087306149455831, guid: 071b71c583561b544a2813dc8215af0e, type: 3}
