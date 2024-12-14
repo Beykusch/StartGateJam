@@ -593,7 +593,7 @@ RectTransform:
   m_GameObject: {fileID: 600342044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.713733, y: 3.713733, z: 3.713733}
+  m_LocalScale: {x: 3.7137325, y: 3.7137325, z: 3.7137325}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 499615744}
@@ -718,6 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 241730750034467704, guid: d1c8676e714abd34d9fccdee84932feb, type: 3}
+  healthObject: {fileID: 0}
   canSpawnEnemy: 1
   waitTime: 1.5
   minY: -4.48
@@ -748,9 +749,10 @@ GameObject:
   - component: {fileID: 1420004756}
   - component: {fileID: 1420004758}
   - component: {fileID: 1420004757}
+  - component: {fileID: 1420004759}
   m_Layer: 5
   m_Name: Health
-  m_TagString: Untagged
+  m_TagString: healthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -812,6 +814,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420004755}
   m_CullTransparentMesh: 1
+--- !u!114 &1420004759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420004755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48098e23a1089945825cee9cf2e311e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1420004757}
+  healthAmount: 100
 --- !u!1 &1526227457
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 2141401275464102913, guid: 70365f11341465e44b2c7597ddb7cda1, type: 3}
+  healthObject: {fileID: 0}
   canSpawnEnemy: 1
   waitTime: 1.5
   minY: -4.48
@@ -953,7 +970,7 @@ GameObject:
   - component: {fileID: 1780309658}
   m_Layer: 0
   m_Name: Spaceship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -971,6 +988,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 10
+  hitboxSpear: {fileID: 0}
+  hitboxSword: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!212 &1780309653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1205,52 +1225,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &2046785939
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2046785941}
-  - component: {fileID: 2046785940}
-  m_Layer: 0
-  m_Name: HealthManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2046785940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2046785939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e48098e23a1089945825cee9cf2e311e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1420004757}
-  healthAmount: 100
---- !u!4 &2046785941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2046785939}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.120126, y: -0.8654381, z: 0.024751335}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1262,4 +1236,3 @@ SceneRoots:
   - {fileID: 965085217}
   - {fileID: 1526227459}
   - {fileID: 292413790}
-  - {fileID: 2046785941}

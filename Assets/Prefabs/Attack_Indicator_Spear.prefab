@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3702710422745943914}
   m_Layer: 0
   m_Name: Attack_Indicator_Spear
-  m_TagString: Untagged
+  m_TagString: Spear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,6 +5,8 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs; // Array to hold multiple enemy prefabs
 
+    public GameObject healthObject;
+
     public bool canSpawnEnemy = true; // Toggle to enable/disable spawning
 
     public float waitTime = 4f; // Time between spawns
@@ -16,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(EnemySpawn());
+        healthObject = GameObject.FindGameObjectWithTag("healthBar");
     }
 
     IEnumerator EnemySpawn()
