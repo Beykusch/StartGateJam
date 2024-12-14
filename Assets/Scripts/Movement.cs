@@ -19,4 +19,14 @@ public class Movement : MonoBehaviour
         speedY = Input.GetAxisRaw("Vertical") * movSpeed;
         rb.linearVelocity = new Vector2(speedX, speedY);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Trigger!");
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("CollisionEnter");
+    }
 }
