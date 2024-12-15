@@ -11,6 +11,7 @@ TagManager:
   - Gate
   - Text
   - Egypt Gate
+  - Credits
   layers:
   - Default
   - TransparentFX

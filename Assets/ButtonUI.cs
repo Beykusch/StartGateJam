@@ -11,9 +11,9 @@ public class ButtonUI : MonoBehaviour
         SceneManager.LoadScene("Cyber");
     }
 
-    public void Credits()
-    {
-        credits.SetActive(true);
-        backButton.SetActive(true);
-    }
+    //public void Credits()
+    //{
+        //credits.SetActive(true);
+        //backButton.SetActive(true);
+    //}
 }
