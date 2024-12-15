@@ -101,3 +101,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 2906087306149455831, guid: 071b71c583561b544a2813dc8215af0e, type: 3}
+  newSprite: {fileID: -2703148418061261845, guid: 4bff23a27a905954bb3b0c3f57d2993a, type: 3}

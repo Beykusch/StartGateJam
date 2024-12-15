@@ -22,7 +22,7 @@ public class HealthManager : MonoBehaviour
 
         if (healthAmount <= 0)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Cyber");
         }
         
         if (Input.GetKeyDown(KeyCode.Return))
